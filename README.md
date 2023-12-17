@@ -5,7 +5,7 @@
 
 Tired of unrealistic roleplay servers? Tired of hearing players complaining about how unrealistic your server is? **You've come to the right Repo!**
 
-Breathing 2.0** fundamentally changes** the way you roleplay, giving you and your players **total control** over their player's stamina consumption, taking back what was unjustly taken from you when Rockstar implemented auto regenerating stamina.
+Breathing 2.0 **fundamentally changes** the way you roleplay, giving you and your players **total control** over their player's stamina consumption, taking back what was unjustly taken from you when Rockstar implemented auto regenerating stamina.
 
 By introducing realistic breathing functionality to your hardcore realistic no-pixel inspired server, you will effectively solve any and all complaints about realism. Your community will gasp and then breathe sighs of relief as a new dawn of total immersion washes over them.
 
