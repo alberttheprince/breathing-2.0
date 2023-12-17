@@ -20,11 +20,10 @@ Despite hundreds of hours of man hours, dozens of consumer surveys, and industry
 - Hear other players breath and suffocate
 - Finally make your server a R E A L I S T I C roleplay server!
 
-# Dependencies:
+# Dependencies
 
 - Ability to press or engage keyboard inputs (Audio based breathing recognition a WIP)
 
-# Preview
 
 https://github.com/alberttheprince/breathing-2.0/assets/85725579/2636059a-4985-49a2-bf82-3d89538f807f
 
