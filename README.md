@@ -11,7 +11,7 @@ By introducing realistic breathing functionality to your hardcore realistic no-p
 
 A new era of Roleplay has been unlocked, as we march forward into a post realistic roleplay reality. 
 
-While working on this resource, we 
+Despite hundreds of hours of man hours, dozens of consumer surveys, and industry experts advising not to, we have released this resource for everyone to use for Free!
 
 # Features
 - Press F to breath
