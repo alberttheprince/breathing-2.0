@@ -1,9 +1,9 @@
 ![image](https://github.com/alberttheprince/breathing-2.0/assets/85725579/8a853f73-7950-4566-a5bb-5254e32b597e)
 
 
-# breathing-2.0
+# breathing 2.0
 
-Tired of unrealistic roleplay servers? Are you tired of hearing players complaining about how unrealistic your server is? You've come to the right Repo!
+Tired of unrealistic roleplay servers? Tired of hearing players complaining about how unrealistic your server is? **You've come to the right Repo!**
 
 Breathing 2.0** fundamentally changes** the way you roleplay, giving you and your players **total control** over their player's stamina consumption, taking back what was unjustly taken from you when Rockstar implemented auto regenerating stamina.
 
