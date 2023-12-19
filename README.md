@@ -27,11 +27,11 @@ Despite hundreds of hours of man hours, dozens of consumer surveys, and industry
 
 https://github.com/alberttheprince/breathing-2.0/assets/85725579/2636059a-4985-49a2-bf82-3d89538f807f
 
-# The Serious Part
+# Reflections of a Scholar
 
-Thank you to [Demi-Automatic](https://github.com/Demigod916), [Manason](https://github.com/Manason), [sqrl](https://github.com/Sqrl34/s), and junction (on the CFX scripting discord) for their help with bug fixes, formatting, and coding. Without you this resource wouldn't be a reality.
+Thank you to [Demi-Automatic](https://github.com/Demigod916), [Manason](https://github.com/Manason), [sqrl](https://github.com/Sqrl34/s), and junction (on the CFX scripting discord) for their help with bug fixes, formatting, and coding. Without you, this resource wouldn't be a reality.
 
-Thanks to [DurtyFree]9https://forge.plebmasters.de/) and others in the Plebmasters discord for discussions on ambient audio and sound files.
+Thanks to [DurtyFree](https://forge.plebmasters.de/) and others in the Plebmasters discord for discussions on ambient audio and sound files.
 
 Note for FiveM Development: This resource makes use of PlayAmbientSpeechFromPositionNative to play audio files typically used by Rockstar to play audio from peds including speech, ambient speech (duh), pain sounds, and thousands of other instances of audio that you would have audio in relation to characters or peds. 
 
