@@ -18,7 +18,7 @@ Despite hundreds of hours of man hours, dozens of consumer surveys, and industry
 - Hear your character breath
 - Hear your character suffer as they suffocate to death
 - Hear other players breathe and suffocate
-- Finally make your server a R E A L I S T I C roleplay server!
+- Finally, make your server a R E A L I S T I C roleplay server!
 
 # Dependencies
 
@@ -40,3 +40,12 @@ However, as far as I've found through research and discussion with other users, 
 The obvious weakness of PlayAmbientSpeechFromPositionNative is that despite having a wide library of audio you can use, you must play it on a coordinate, meaning if a user is moving quickly (say in one of your shitty de-badged vehicles at 300 mph) you may not hear the file being played. Additionally, as PlayAmbientSpeechFromPositionNative is client side only, use of Manason's [tool name link here] must be used to have the audio also play for other clients nearby.
 
 Most audio files that can be used with this native can be found in the GTA files under SFX, and you can find a list by exploring DurtyFree's various collections/lists of audio files. 
+
+12/20/2023 - Update
+
+Following a lot of testing with [Manason](https://github.com/Manason), we encountered quite a few issues with using PlayAmbientSpeechFromPositionNative. It turns out to be client side only, this is solved by creating a tool to take advantage of PlayAmbientSpeechFromPositionNative and sync it between players, but Manason felt that it would be better to convert (or use custom audio) audio to audio libraries you can call via that uses PlaySoundFromEntity and other natives to play native audio. This tool is [mana_audio](https://github.com/Manason/mana_audio).
+
+We encountered a couple of issues, one of which was audio refusing to play despite proper setup. This turned out to be an issue with how [LVCv3](https://forum.cfx.re/t/luxart-vehicle-control-v3/4436673) (or at least our setup) was loading audio banks. Depending on your artifact version, you can only ever have 7 - 10 audio banks loaded. With custom sirens, this set us at 6 audio banks due to us using Server Sided Siren Integration, it ended up conflicting (as well as other resources not unloading audio banks) which allowed us to use mana_audio to play sounds directly on the entity and sync it with other players.
+
+As far as we can tell, this will still run into the 10 audio bank limit that exists. Whether this exists for PlayAmbientSpeechFromPositionNative, we're not sure, but the ability for this audio to be played directly from the ped is important for uses like this resource, or others that might want to play sounds from entities.
+
