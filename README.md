@@ -33,7 +33,7 @@ Thank you to [Demi-Automatic](https://github.com/Demigod916), [Manason](https://
 
 Thanks to [DurtyFree](https://forge.plebmasters.de/) and others in the Plebmasters discord for discussions on ambient audio and sound files.
 
-**Notes for FiveM Development: **
+**Notes for FiveM Development:**
 
 This resource makes use of PlayAmbientSpeechFromPositionNative to play audio files typically used by Rockstar to play audio from peds including speech, ambient speech (duh), pain sounds, and thousands of other instances of audio that you would have audio in relation to characters or peds. 
 
