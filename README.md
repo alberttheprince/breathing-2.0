@@ -33,7 +33,9 @@ Thank you to [Demi-Automatic](https://github.com/Demigod916), [Manason](https://
 
 Thanks to [DurtyFree](https://forge.plebmasters.de/) and others in the Plebmasters discord for discussions on ambient audio and sound files.
 
-Note for FiveM Development: This resource makes use of PlayAmbientSpeechFromPositionNative to play audio files typically used by Rockstar to play audio from peds including speech, ambient speech (duh), pain sounds, and thousands of other instances of audio that you would have audio in relation to characters or peds. 
+**Notes for FiveM Development: **
+
+This resource makes use of PlayAmbientSpeechFromPositionNative to play audio files typically used by Rockstar to play audio from peds including speech, ambient speech (duh), pain sounds, and thousands of other instances of audio that you would have audio in relation to characters or peds. 
 
 However, as far as I've found through research and discussion with other users, you **cannot** use PlayPedAmbientSpeechNative or PlayPedAmbientSpeechWithVoiceNative to make the ped controlled by a player to speak. Additionally, setting the MP_ models PVG does not work (via natives or through streaming of meta files) and when setting it and attempting to use it in this way it will not produce any audio. You also cannot use these with PlaySoundFrontend or PlaySound, as those seem to handle other audio files, usually cut environmental, or cutscene audio.
 
