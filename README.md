@@ -15,7 +15,7 @@ Despite hundreds of hours of man hours, dozens of consumer surveys, and industry
 
 # Features
 - Press F to breath
-- Hear your character breath
+- Hear your character breathe
 - Hear your character suffer as they suffocate to death
 - Hear other players breathe and suffocate
 - Finally, make your server a R E A L I S T I C roleplay server!
