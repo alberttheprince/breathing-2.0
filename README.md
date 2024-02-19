@@ -11,7 +11,7 @@ By introducing realistic breathing functionality to your hardcore ultra-realisti
 
 A new era of Roleplay has been unlocked, as we march forward into a post-casual roleplay reality. 
 
-Despite hundreds of hours of man hours, dozens of consumer surveys, and industry experts advising not to, we have released this resource for everyone to use for Free!
+Despite hundreds of hours of man hours, dozens of consumer surveys, and industry experts advising not to, we have released this resource for everyone to use for free!
 
 # Features
 - Press F to breath
