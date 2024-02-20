@@ -1,10 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'A Resource that implements total realism by forcing players to breathe or DIE'
-author "PrinceAlbert - Noor Nahas"
-
-version '1.0.0'
+author 'PrinceAlbert'
+description 'Breathe or DIE - Experience the most advanced roleplay resource in the Universe'
 
 client_scripts {
 	'client.lua'
@@ -15,14 +13,10 @@ server_scripts {
 }
 
 files {
-	'dlc_BREATHING_SOUNDSET/BREATHING_SOUNDSET.awc',
-	'data/BREATHING_SOUNDSET.dat54.rel',
-	'data/BREATHING_SOUNDSET.dat54.nametable',
+	'dlc_breathe/breathe.awc',
+	'data/breathe.dat54.rel',
+	'data/breathe.dat54.nametable',
 }
 
-data_file "AUDIO_WAVEPACK" "dlc_BREATHING_SOUNDSET"
-data_file "AUDIO_SOUNDDATA" "data/BREATHING_SOUNDSET.dat"
-
-
-lua54 'yes'
-use_experimental_fxv2_oal 'yes'
+data_file "AUDIO_WAVEPACK" "dlc_breathe"
+data_file "AUDIO_SOUNDDATA" "data/breathe.dat"

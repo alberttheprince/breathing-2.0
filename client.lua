@@ -16,13 +16,13 @@ Config.Exhale = 10 -- How much stamina you lose every tick (out of 100)
 
 CreateThread(function()
     while true do
-        local breath = math.floor(GetPlayerStamina(PlayerId()))
+        local breath = (GetPlayerStamina(PlayerId()))
         SetPlayerStamina(PlayerId(), (breath - Config.Exhale))
         Wait(Config.BreathLossTick)
-        if breath <= Config.Suffocation then 
-            ApplyDamageToPed(PlayerPedId(), 5, false)
-                -- local PlayerCoords = GetEntityCoords(PlayerPedId())
-                -- PlayAmbientSpeechFromPositionNative("EXHAUSTED", "WAVELOAD_PAIN_FRANKLIN", PlayerCoords.x, PlayerCoords.y, PlayerCoords.z, "SPEECH_PARAMS_FORCE_NORMAL")
+        if breath <= Config.Suffocation then  
+            ApplyDamageToPed(PlayerPedId(), Config.SuffocationDamage, false)
+            -- local PlayerCoords = GetEntityCoords(PlayerPedId())
+            -- PlayAmbientSpeechFromPositionNative("EXHAUSTED", "WAVELOAD_PAIN_FRANKLIN", PlayerCoords.x, PlayerCoords.y, PlayerCoords.z, "SPEECH_PARAMS_FORCE_NORMAL")
             TriggerServerEvent('Breathing2.0:Player_Suffocating')
         end
     end
