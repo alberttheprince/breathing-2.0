@@ -11,11 +11,11 @@ By introducing realistic breathing functionality to your hardcore ultra-realisti
 
 A new era of Roleplay has been unlocked, as we march forward into a post-casual roleplay reality. 
 
-Despite hundreds of hours of man hours, dozens of consumer surveys, and industry experts advising not to, we have released this resource for everyone to use for Free!
+Despite hundreds of hours of man hours, dozens of consumer surveys, and industry experts advising not to, we have released this resource for everyone to use for free!
 
 # Features
 - Press F to breath
-- Hear your character breath
+- Hear your character breathe
 - Hear your character suffer as they suffocate to death
 - Hear other players breathe and suffocate
 - Finally, make your server a R E A L I S T I C roleplay server!
@@ -23,6 +23,7 @@ Despite hundreds of hours of man hours, dozens of consumer surveys, and industry
 # Dependencies
 
 - Ability to press or engage keyboard inputs (Audio based breathing recognition a WIP)
+- [mana_audio](https://github.com/Manason/mana_audio)
 
 
 https://github.com/alberttheprince/breathing-2.0/assets/85725579/2636059a-4985-49a2-bf82-3d89538f807f
