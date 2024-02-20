@@ -30,9 +30,9 @@ https://github.com/alberttheprince/breathing-2.0/assets/85725579/2636059a-4985-4
 
 # Reflections of a Scholar
 
-Thank you to [Demi-Automatic](https://github.com/Demigod916), [Manason](https://github.com/Manason), [sqrl](https://github.com/Sqrl34/s), and junction (on the CFX scripting discord) for their help with bug fixes, formatting, and coding. Without you, this resource wouldn't be a reality.
+Thank you to [Demi-Automatic](https://github.com/Demigod916), [Manason](https://github.com/Manason), [sqrl](https://github.com/Sqrl34/s), and junction (on the CFX scripting discord), and [Disquse](https://github.com/disquse) for their help with bug fixes, formatting, and coding. Without you, this resource wouldn't have been able to bless the roleplay community with total realism.
 
-Thanks to [DurtyFree](https://forge.plebmasters.de/) and others in the Plebmasters discord for discussions on ambient audio and sound files.
+Thanks to [DurtyFree](https://forge.plebmasters.de/) and others in the Plebmasters discord for discussions and info on ambient audio and sound files.
 
 ---
 
@@ -50,7 +50,10 @@ Most audio files that can be used with this native can be found in the GTA files
 
 Following a lot of testing with [Manason](https://github.com/Manason), we encountered quite a few issues with using PlayAmbientSpeechFromPositionNative. It turns out to be client side only, this is solved by creating a tool to take advantage of PlayAmbientSpeechFromPositionNative and sync it between players, but Manason felt that it would be better to convert (or use custom audio) audio to audio libraries you can call via that uses PlaySoundFromEntity and other natives to play native audio. This tool is [mana_audio](https://github.com/Manason/mana_audio).
 
-We encountered a couple of issues, one of which was audio refusing to play despite proper setup. This turned out to be an issue with how [LVCv3](https://forum.cfx.re/t/luxart-vehicle-control-v3/4436673) (or at least our setup) was loading audio banks. Depending on your artifact version, you can only ever have 7 - 10 audio banks loaded. With custom sirens, this set us at 6 audio banks due to us using Server Sided Siren Integration, it ended up conflicting (as well as other resources not unloading audio banks) which allowed us to use mana_audio to play sounds directly on the entity and sync it with other players.
+We encountered a couple of issues, one of which was the audio refusing to play despite proper setup. This turned out to be an issue with how [LVCv3](https://forum.cfx.re/t/luxart-vehicle-control-v3/4436673) (or at least our setup) was loading audio banks. Depending on your artifact version, you can only ever have 7 - 10 audio banks loaded. With custom sirens, this set us at 6 audio banks due to us using Server Sided Siren Integration, it ended up conflicting (as well as other resources not unloading audio banks) which allowed us to use mana_audio to play sounds directly on the entity and sync it with other players.
 
 As far as we can tell, this will still run into the 10 audio bank limit that exists. Whether this exists for PlayAmbientSpeechFromPositionNative, we're not sure, but the ability for this audio to be played directly from the ped is important for uses like this resource, or others that might want to play sounds from entities.
 
+20/02/2024 - Update
+
+Following a fix of the [GetPlayerStamina Native](https://github.com/citizenfx/fivem/issues/2341) work on this has continued, although I've gone ahead and remade the add-on audio of this resource. I'm not sure why, but the original logic of how I was setting stamina was not acting like it was before the fix. If that was an error on my part or something else, the math.floor was removed, and the resource is working. (To be continued)
