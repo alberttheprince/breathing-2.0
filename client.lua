@@ -19,7 +19,7 @@ CreateThread(function()
         local breath = (GetPlayerStamina(PlayerId()))
         SetPlayerStamina(PlayerId(), (breath - Config.Exhale))
         Wait(Config.BreathLossTick)
-        if breath <= Config.Suffocation then  
+        if breath <= Config.Suffocation then
             ApplyDamageToPed(PlayerPedId(), Config.SuffocationDamage, false)
             -- local PlayerCoords = GetEntityCoords(PlayerPedId())
             -- PlayAmbientSpeechFromPositionNative("EXHAUSTED", "WAVELOAD_PAIN_FRANKLIN", PlayerCoords.x, PlayerCoords.y, PlayerCoords.z, "SPEECH_PARAMS_FORCE_NORMAL")
