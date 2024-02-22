@@ -26,7 +26,11 @@ Despite hundreds of hours of man hours, dozens of consumer surveys, and industry
 - [mana_audio](https://github.com/Manason/mana_audio)
 
 
-https://github.com/alberttheprince/breathing-2.0/assets/85725579/2636059a-4985-49a2-bf82-3d89538f807f
+
+
+https://github.com/alberttheprince/breathing-2.0/assets/85725579/72f35a7f-5580-49df-9a8b-08cad40abf28
+
+
 
 # Reflections of a Scholar
 
@@ -56,4 +60,14 @@ As far as we can tell, this will still run into the 10 audio bank limit that exi
 
 20/02/2024 - Update
 
-Following a fix of the [GetPlayerStamina Native](https://github.com/citizenfx/fivem/issues/2341) work on this has continued, although I've gone ahead and remade the add-on audio of this resource. I'm not sure why, but the original logic of how I was setting stamina was not acting like it was before the fix. If that was an error on my part or something else, the math.floor was removed, and the resource is working. (To be continued)
+Following a fix of the [GetPlayerStamina Native](https://github.com/citizenfx/fivem/issues/2341) work on this has continued, although I've gone ahead and remade the add-on audio of this resource. I'm not sure why, but the original logic of how I was setting stamina was not acting like it was before the fix. If that was an error on my part or something else, the math.floor was removed, and the resource is working.
+
+22/02/2024 - Final Update
+
+Initially working on this resource, I didn't have much knowledge of GTA 5 Audio, and I had to reach out to a couple people/sources of information, looking at the audio research of Monkeypolice188](https://github.com/Monkeypolice188/Monkys-Audio-Research/tree/main), digging through discussions about creating native audio on LSPDFR and other forums, and using BJDubb's [SirenSharp tool](https://github.com/BJDubb/SirenSharp) to package the AWC and make the associated files. Due to the original intended use of SirenSharp being for well, vehicle Sirens, this required some editing of the files XML information in Codewalker.
+
+Namely, the most important thing was to edit the distance the audio was played at, and if it was looping or not. Within the AWC is a line <LoopPoint value="0"/>, which should be <LoopPoint value="-1"/> for non-looping audio. In this case, someone breathing wouldn't be looped, but in the case of a siren, you would want it to be looped. Additionally, more info can be found by opening up the AWC and dat files in codewalker to see what I changed vs what is produced by sirensharp.
+
+I've created a handy example for streaming add-on sounds [here](https://github.com/alberttheprince/AddonCarSounds) but this can be loaded per resource. I can't find the original discussion, but as I understand there is roughly a limit of 190 additional sounds (or at least within that range) that's been run into by people who create libraries of add-on audio files, mainly when adding custom car audio.
+
+You'll see quite a bit of discussion of Native Audio in the FiveM community and other similar tools, and while it may seem new, much of this has already been researched and looked into deeply by people on LSPDFR and a lot of the emergency services RP communities and vehicle modders as they have a big incentive/reason to get custom audio working. Unfortunately, as with many things in the GTA 5 community, this info is spread out online, gatekept, or held as "tribal knowledge" but some googling will give you results. 
