@@ -23,7 +23,7 @@ Despite hundreds of hours of man hours, dozens of consumer surveys, and industry
 # Dependencies
 
 - Ability to press or engage keyboard inputs (Audio based breathing recognition a WIP)
-- [mana_audio](https://github.com/Manason/mana_audio)
+- [mana_audio](https://github.com/Manason/mana_audio) (for syncing audio between players, if you don't care you can uncomment the code that does it for your local client only)
 
 
 
